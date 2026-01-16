@@ -1,0 +1,17 @@
+.vscode/**
+.vscode-test/**
+src/**
+tsconfig.json
+.gitignore
+.gitattributes
+.yarnrc
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/*.map
+**/*.ts
+node_modules/**
+!node_modules/@renderix/**
+core/**
+!core/dist/**
+test-basic.js
+DEPLOYMENT.md

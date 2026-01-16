@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@renderix/core": "file:.."
+  }
+}

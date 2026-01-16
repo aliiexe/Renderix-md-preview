@@ -1,0 +1,58 @@
+{
+  "name": "renderix-md-preview",
+  "displayName": "Renderix Markdown Preview",
+  "description": "Beautiful Markdown preview with syntax highlighting and theme support",
+  "version": "0.1.0",
+  "publisher": "Ali Bourak",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aliiexe/Renderix-md-preview.git"
+  },
+  "homepage": "https://github.com/aliiexe/Renderix-md-preview",
+  "bugs": {
+    "url": "https://github.com/aliiexe/Renderix-md-preview/issues"
+  },
+  "keywords": [
+    "markdown",
+    "preview",
+    "render",
+    "syntax-highlighting",
+    "theme",
+    "markdown-preview",
+    "md"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "renderix.openPreview",
+        "title": "Renderix: Open Markdown Preview",
+        "category": "Renderix"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -watch -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "test": "echo \"Tests not yet implemented\"",
+    "lint": "echo \"Linting not yet configured\"",
+    "package": "vsce package"
+  },
+  "dependencies": {
+    "@renderix/core": "file:../core"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
